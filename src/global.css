@@ -54,3 +54,76 @@ body {
   padding: 0;
   line-height: inherit;
 }
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.card{
+  background-color: whitesmoke;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.375rem;
+}
+
+
+.image-character{
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 0.375rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.card-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+details{
+  display: flex;
+  max-width: 36rem;
+  border-radius: 5px;
+}
+
+.container-details{
+  padding: 0 2rem;
+}
+
+.btn-back{
+  display: inline-block;
+  text-align: center;
+  padding: 0.375rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  outline: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .grid-container{
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container{
+    grid-template-columns: repeat(2, auto);
+  }
+}
